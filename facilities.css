@@ -1,0 +1,75 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top:0%;
+    left:0%;
+    right:0%;
+}
+
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-family:arial;
+    text-decoration:none ;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: gray;
+}
+body{
+    background-image:url(https://wallpaperset.com/w/full/1/4/9/64978.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1020px;
+    border-radius: 8px;
+}
+.a{
+    position: absolute;
+    top: 20%;
+    left:10%;
+}
+.b{
+    position: absolute;
+    top: 20%;
+    left:40%;
+}
+.c{
+    position: absolute;
+    top: 20%;
+    left:70%;
+}
+.b1{
+    background-color: aquamarine;
+    padding: 10px 30px;
+    position: absolute;
+    top:50%;
+    left:10%;
+}
+.b2{
+    background-color: aquamarine;
+    padding: 10px 30px;
+    position: absolute;
+    top:50%;
+    left:40%;
+}
+.b3{
+    background-color: aquamarine;
+    padding: 10px 30px;
+    position: absolute;
+    top:50%;
+    left:70%;
+}
