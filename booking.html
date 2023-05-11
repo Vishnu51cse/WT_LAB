@@ -1,0 +1,116 @@
+<html>
+<head>
+    
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+<body>
+  <div class="nav">
+
+    <ul>
+      <li><a href="sample.html">Home</a></li>
+      <li><a href="room.html">Rooms</a></li>
+      <li><a class="active" href="booking.html">Bookings</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="location.html">Locations</a></li>
+      <li><a href="complaint.html">Complaints & Complaints</a></li>
+      <li><a href="about.html">About</a></li>
+    </div>
+    <div class="form">
+
+      <form name="myform" method="post" action="" onsubmit="return validateform()">
+        
+        
+        
+        <div class="name">
+
+          <label for="Name" class="n1">Name:</label>
+          <input type="text"   class="n2"placeholder="Enter Name" name="Name">
+        </div>
+        <div class="email">
+
+          
+          
+          <label for="email" class="e1">Email:</label>
+          <input type="email"  class="e2"placeholder="Enter email" name="email">
+        </div>
+        <div class="phone">
+
+    
+
+        <label for="tel"class="p1">Phone:</label>
+        <input type="tel" class="p2" placeholder="Enter Phone no" name="tel">
+        </div>
+        <div class="password">
+        <label for="pwd1"class="p3">Password:</label>
+        <input type="password"class="p4"   placeholder="Enter password" name="pwd1">
+        </div>
+        <div class="confirm">
+        <label for="pwd2"class="p5">Confirm Password:</label>
+        <input type="password"  class="p6"placeholder="Enter password" name="pwd2">
+        </div>
+        <div class="che">
+        <input type="checkbox" class="a1"name="agree"  value="yes" />
+        <label for="agree" class="a2">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit"class="bu">Submit</button>
+        
+      </form>  
+    </div>
+    
+     
+    
+    
+    <script>
+    // Get the moda <script>  
+        function validateform(){  
+        var name=document.myform.Name.value;  
+        var tel=document.myform.tel.value;
+        var email=document.myform.email.value;
+        var password=document.myform.pwd1.value;  
+        var password1=document.myform.pwd2.value;
+        
+        
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }
+        
+        if(email==null || email==""){
+            alert("Email can't be blank");
+            return false;
+        }
+        if(tel==null || tel==""){
+            alert("Phone no can't be blank");
+            return false;
+        }
+        if(tel.length!=""){
+            var regex = /^(\d{3})[-]?(\d{3})[-]?(\d{4})$/;
+            if(regex.test(tel) === false)
+            {
+                alert("Invalid Phone Number");
+                return false;
+            }
+        }
+        if (password == "") {
+                alert("Please enter your password");
+                return false;
+            }
+        
+        if(password != password1){
+            alert("Password mismatch");
+                return false;
+        }
+        if(password.length!= ""){
+               var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;                
+                if(regex.test(password) === false) 
+                {    alert("Please enter a valid pwd");
+                        return false;
+                }       
+        }
+        }
+        </script>
+   
+    
+</body>
+</html>
