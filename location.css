@@ -1,0 +1,51 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top:0%;
+    left:0%;
+    right:0%;
+}
+
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-family:arial;
+    text-decoration:none ;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: gray;
+}
+body{
+    background-image:url(https://cdn.wallpapersafari.com/9/50/kcSNGK.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1020px;
+    border-radius: 8px;
+}
+.a{
+    position: absolute;
+    top:30%;
+    left:20%;
+    right:20%;
+}
+.ab{
+    color: white;
+}
+.abc{
+    color:black;
+}
